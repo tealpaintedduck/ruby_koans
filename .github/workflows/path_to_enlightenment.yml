@@ -1,0 +1,11 @@
+name: Path to Enlightenment
+on: push
+
+jobs:
+  path-to-enlightenment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check progress
+        run: ruby path_to_enlightenment.rb
+        working-directory: koans
